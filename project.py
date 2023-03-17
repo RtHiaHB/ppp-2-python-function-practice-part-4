@@ -26,3 +26,10 @@ def rev_string(my_str):
     return reversed
 
 print(f"'Thomas' reversed: {rev_string('Thomas')}")
+
+def num_within(num_1, range_lo, range_hi):
+    return num_1 >= range_lo and num_1 <= range_hi
+
+print(f"Is 3 between 2 and 4 (inclusive)?: {num_within(3, 2, 4)}")
+print(f"Is 3 between 1 and 3 (inclusive)?: {num_within(3, 1, 3)}")
+print(f"Is 10 between 2 and 5 (inclusive)?: {num_within(10, 2, 5)}")
